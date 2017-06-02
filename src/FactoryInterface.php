@@ -17,7 +17,10 @@ interface FactoryInterface
      * @param string $id     The ID of the instance to create.
      * @param mixed  $config Some kind of configuration.
      *
-     * @return object|null The created instance or null on failure.
+     * @throws CouldNotMakeExceptionInterface If the factory failed to make the instance.
+     * @throws FactoryExceptionInterface If an error occurred while making the instance.
+     *
+     * @return object The created instance.
      */
     public function make($id, array $config = array());
 }
