@@ -3,6 +3,7 @@
 namespace Dhii\Factory\Exception;
 
 use Dhii\Exception\ThrowableInterface;
+use Dhii\Util\String\StringableInterface as Stringable;
 
 /**
  * An exception thrown when a factory failed to create an instance.
@@ -18,7 +19,7 @@ interface CouldNotMakeExceptionInterface extends
      *
      * @since [*next-version*]
      *
-     * @return string|StringableInterface
+     * @return string|Stringable
      */
     public function getSubjectId();
 
