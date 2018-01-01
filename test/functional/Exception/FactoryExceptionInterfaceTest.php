@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Factory\FuncTest;
+namespace Dhii\Factory\FuncTest\Exception;
 
 use Dhii\Factory\FactoryExceptionInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Factory\FactoryExceptionInterface}.
+ * Tests {@see Dhii\Factory\Exception\FactoryExceptionInterface}.
  *
  * @since [*next-version*]
  */
@@ -17,7 +17,7 @@ class FactoryExceptionInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Factory\\FactoryExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Factory\\Exception\\FactoryExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.

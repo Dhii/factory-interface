@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Factory;
+namespace Dhii\Factory\Exception;
 
 /**
  * An exception thrown by a factory when an error has occurred.

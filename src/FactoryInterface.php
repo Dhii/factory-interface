@@ -2,6 +2,9 @@
 
 namespace Dhii\Factory;
 
+use Dhii\Factory\Exception\FactoryExceptionInterface;
+use Dhii\Factory\Exception\CouldNotMakeExceptionInterface;
+
 /**
  * Something that can create instances.
  *

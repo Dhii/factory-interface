@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Factory;
+namespace Dhii\Factory\Exception;
 
 /**
  * An exception thrown when a factory failed to create an instance.
