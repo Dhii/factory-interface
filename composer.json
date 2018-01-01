@@ -1,6 +1,6 @@
 {
     "name": "dhii/factory-interface",
-    "description": "",
+    "description": "Interfaces for working with factories.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -10,8 +10,10 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "php": "^5.3 | ^7.0"
+        "php": "^5.3 | ^7.0",
+        "dhii/exception-interface": "^0.2"
     },
     "require-dev": {
         "psr/container": "^1.0",
