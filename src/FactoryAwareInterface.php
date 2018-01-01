@@ -14,7 +14,7 @@ interface FactoryAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return FactoryInterface
+     * @return FactoryInterface|null
      */
     public function getFactory();
 }
