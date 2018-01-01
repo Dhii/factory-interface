@@ -21,7 +21,7 @@ interface FactoryInterface
      * @param mixed  $config Some kind of configuration.
      *
      * @throws CouldNotMakeExceptionInterface If the factory failed to make the instance.
-     * @throws FactoryExceptionInterface      If an error occurred while making the instance.
+     * @throws FactoryExceptionInterface      If an error related to the factory occurs.
      *
      * @return object The created instance.
      */
