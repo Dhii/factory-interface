@@ -2,12 +2,16 @@
 
 namespace Dhii\Factory\Exception;
 
+use Dhii\Exception\ThrowableInterface;
+
 /**
  * An exception thrown when a factory failed to create an instance.
  *
  * @since [*next-version*]
  */
-interface CouldNotMakeExceptionInterface extends FactoryExceptionInterface
+interface CouldNotMakeExceptionInterface extends
+    ThrowableInterface,
+    FactoryExceptionInterface
 {
     /**
      * Retrieves the ID of the subject that failed.

@@ -30,6 +30,16 @@ class FactoryExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->make()
+
+            ->getMessage()
+            ->getCode()
+            ->getPrevious()
+            ->getFile()
+            ->getLine()
+            ->getTrace()
+            ->getTraceAsString()
+            ->__toString()
+
             ->new();
 
         return $mock;
@@ -46,6 +56,9 @@ class FactoryExceptionInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
+        );
+        $this->assertInstanceOf(
+            'Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface'
         );
     }
 }
