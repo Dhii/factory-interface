@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Factory\FuncTest;
+namespace Dhii\Factory\UnitTest;
 
 use Dhii\Factory\FactoryInterface as TestSubject;
 use Xpmock\TestCase;
