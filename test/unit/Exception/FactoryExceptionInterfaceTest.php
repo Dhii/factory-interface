@@ -29,8 +29,6 @@ class FactoryExceptionInterfaceTest extends TestCase
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->make()
-
             ->getMessage()
             ->getCode()
             ->getPrevious()
