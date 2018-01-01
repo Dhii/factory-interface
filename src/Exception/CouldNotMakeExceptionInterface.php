@@ -11,7 +11,6 @@ use Dhii\Util\String\StringableInterface as Stringable;
  * @since [*next-version*]
  */
 interface CouldNotMakeExceptionInterface extends
-    ThrowableInterface,
     FactoryExceptionInterface
 {
     /**
