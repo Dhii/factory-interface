@@ -6,7 +6,7 @@ use Dhii\Factory\Exception\FactoryExceptionInterface;
 use Dhii\Factory\Exception\CouldNotMakeExceptionInterface;
 
 /**
- * Something that can create instances.
+ * Something that can create things.
  *
  * @since [*next-version*]
  */
@@ -23,7 +23,7 @@ interface FactoryInterface
      * @throws CouldNotMakeExceptionInterface If the factory failed to make the instance.
      * @throws FactoryExceptionInterface      If an error related to the factory occurs.
      *
-     * @return object The created instance.
+     * @return mixed The created things.
      */
     public function make($id, array $config = array());
 }
