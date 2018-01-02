@@ -4,6 +4,7 @@ namespace Dhii\Factory;
 
 use Dhii\Factory\Exception\FactoryExceptionInterface;
 use Dhii\Factory\Exception\CouldNotMakeExceptionInterface;
+use Psr\Container\ContainerInterface;
 
 /**
  * Something that can create things.
@@ -17,12 +18,12 @@ interface FactoryInterface
      *
      * @since [*next-version*]
      *
-     * @param mixed $config Some kind of configuration.
+     * @param array|ContainerInterface $config Some kind of configuration.
      *
      * @throws CouldNotMakeExceptionInterface If the factory failed to make the instance.
      * @throws FactoryExceptionInterface      If an error related to the factory occurs.
      *
      * @return mixed The created things.
      */
-    public function make(array $config = array());
+    public function make($config = null);
 }
