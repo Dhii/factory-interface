@@ -2,6 +2,8 @@
 
 namespace Dhii\Factory\Exception;
 
+use Psr\Container\ContainerInterface;
+
 /**
  * An exception thrown when a factory failed to create an instance.
  *
@@ -15,7 +17,7 @@ interface CouldNotMakeExceptionInterface extends
      *
      * @since [*next-version*]
      *
-     * @return mixed
+     * @return array|ContainerInterface
      */
     public function getSubjectConfig();
 }
