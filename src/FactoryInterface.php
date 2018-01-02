@@ -17,13 +17,12 @@ interface FactoryInterface
      *
      * @since [*next-version*]
      *
-     * @param string $id     The ID of the instance to create.
-     * @param mixed  $config Some kind of configuration.
+     * @param mixed $config Some kind of configuration.
      *
      * @throws CouldNotMakeExceptionInterface If the factory failed to make the instance.
      * @throws FactoryExceptionInterface      If an error related to the factory occurs.
      *
      * @return mixed The created things.
      */
-    public function make($id, array $config = array());
+    public function make(array $config = array());
 }
