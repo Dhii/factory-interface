@@ -30,7 +30,6 @@ class CouldNotMakeExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getFactory()
-            ->getSubjectId()
             ->getSubjectConfig()
 
             ->getMessage()
