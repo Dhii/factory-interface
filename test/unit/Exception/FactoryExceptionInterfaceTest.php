@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Factory\FuncTest;
+namespace Dhii\Factory\UnitTest\Exception;
 
-use Dhii\Factory\FactoryExceptionInterface;
+use Dhii\Factory\Exception\FactoryExceptionInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Factory\FactoryExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
@@ -17,19 +17,29 @@ class FactoryExceptionInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Factory\\FactoryExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Factory\Exception\FactoryExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return FactoryExceptionInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
-            ->make()
+            ->getFactory()
+
+            ->getMessage()
+            ->getCode()
+            ->getPrevious()
+            ->getFile()
+            ->getLine()
+            ->getTrace()
+            ->getTraceAsString()
+            ->__toString()
+
             ->new();
 
         return $mock;
@@ -46,6 +56,9 @@ class FactoryExceptionInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME, $subject, 'Subject is not a valid instance.'
+        );
+        $this->assertInstanceOf(
+            'Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface'
         );
     }
 }

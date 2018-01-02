@@ -1,12 +1,12 @@
 <?php
 
-namespace Dhii\Factory\FuncTest;
+namespace Dhii\Factory\UnitTest;
 
-use Dhii\Factory\FactoryInterface;
+use Dhii\Factory\FactoryInterface as TestSubject;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see Dhii\Factory\FactoryInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since [*next-version*]
  */
@@ -17,14 +17,14 @@ class FactoryInterfaceTest extends TestCase
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Factory\\FactoryInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Factory\FactoryInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return FactoryInterface
+     * @return TestSubject
      */
     public function createInstance()
     {
