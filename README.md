@@ -8,7 +8,14 @@
 
 Interfaces for working with factories.
 
-
-This package complies with [Dhii] standards
+## Interfaces
+- [`FactoryInterface`][FactoryInterface] - Creates things.
+- [`FactoryFactoryInterface`][FactoryFactoryInterface] - Creates factories. For example, could create a factory from
+a callback or an FQN.
+- [`FactoryAwareInterface`][FactoryAwareInterface] - Exposes a factory.
 
 [Dhii]: https://github.com/Dhii/dhii
+
+[FactoryInterface]:                         src/FactoryInterface.php
+[FactoryFactoryInterface]:                  src/FactoryFactoryInterface.php
+[FactoryAwareInterface]:                    src/FactoryAwareInterface.php
