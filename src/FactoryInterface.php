@@ -2,9 +2,11 @@
 
 namespace Dhii\Factory;
 
+use ArrayAccess;
 use Dhii\Factory\Exception\FactoryExceptionInterface;
 use Dhii\Factory\Exception\CouldNotMakeExceptionInterface;
 use Psr\Container\ContainerInterface;
+use stdClass;
 
 /**
  * Something that can create things.
@@ -18,7 +20,8 @@ interface FactoryInterface
      *
      * @since [*next-version*]
      *
-     * @param array|ContainerInterface $config Some kind of configuration.
+     * @param array|ArrayAccess|ContainerInterface|stdClass|null $config A map of configuration, if any. Any container
+     *                                                                   that passes normalization by {@see Dhii\Data\Container\ContainerGetCapableTrait#_containerGet()}.
      *
      * @throws CouldNotMakeExceptionInterface If the factory failed to make the instance.
      * @throws FactoryExceptionInterface      If an error related to the factory occurs.
