@@ -9,6 +9,7 @@ Interfaces for working with factories.
 
 ## Interfaces
 - [`FactoryInterface`][FactoryInterface] - Creates things.
+- [`DataObjectFactoryInterface`][DataObjectFactoryInterface] - Creates data objects.
 - [`FactoryFactoryInterface`][FactoryFactoryInterface] - Creates factories. For example, could create a factory from
 a callback or an FQN.
 - [`FactoryAwareInterface`][FactoryAwareInterface] - Exposes a factory.
@@ -16,5 +17,6 @@ a callback or an FQN.
 [Dhii]: https://github.com/Dhii/dhii
 
 [FactoryInterface]:                         src/FactoryInterface.php
+[DataObjectFactoryInterface]:               src/DataObjectFactoryInterface.php
 [FactoryFactoryInterface]:                  src/FactoryFactoryInterface.php
 [FactoryAwareInterface]:                    src/FactoryAwareInterface.php
