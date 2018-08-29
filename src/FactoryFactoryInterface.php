@@ -5,14 +5,14 @@ namespace Dhii\Factory;
 /**
  * Something that creates factories.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface FactoryFactoryInterface extends FactoryInterface
 {
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return FactoryInterface The new factory.
      */

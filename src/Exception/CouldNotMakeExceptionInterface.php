@@ -7,7 +7,7 @@ use Psr\Container\ContainerInterface;
 /**
  * An exception thrown when a factory failed to create an instance.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface CouldNotMakeExceptionInterface extends
     FactoryExceptionInterface
@@ -15,7 +15,7 @@ interface CouldNotMakeExceptionInterface extends
     /**
      * Retrieves the configuration of the subject that failed.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return array|ContainerInterface
      */

@@ -7,14 +7,14 @@ namespace Dhii\Factory;
  *
  * Primarily just defines the way of passing data for the object in the config.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface DataObjectFactoryInterface extends FactoryInterface
 {
     /**
      * The config key that contains the data for the product.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const K_DATA = 'data';
 }

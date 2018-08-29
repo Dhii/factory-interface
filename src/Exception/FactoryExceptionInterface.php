@@ -8,7 +8,7 @@ use Dhii\Factory\FactoryAwareInterface;
 /**
  * An exception thrown by a factory when an error has occurred.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface FactoryExceptionInterface extends
     ThrowableInterface,

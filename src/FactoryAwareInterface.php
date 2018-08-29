@@ -5,14 +5,14 @@ namespace Dhii\Factory;
 /**
  * Something that can have a factory retrieved from it.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface FactoryAwareInterface
 {
     /**
      * Retrieves the factory associate with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return FactoryInterface|null
      */

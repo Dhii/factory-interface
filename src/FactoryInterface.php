@@ -11,14 +11,14 @@ use stdClass;
 /**
  * Something that can create things.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface FactoryInterface
 {
     /**
      * Creates a new instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param array|ArrayAccess|ContainerInterface|stdClass|null $config A map of configuration, if any. Any container
      *                                                                   that passes normalization by {@see Dhii\Data\Container\ContainerGetCapableTrait#_containerGet()}.
