@@ -1,4 +1,4 @@
-# Dhii - Factory Interface
+# [DEPRECATED] Dhii - Factory Interface
 
 [![Build Status](https://travis-ci.org/Dhii/factory-interface.svg?branch=develop)](https://travis-ci.org/Dhii/factory-interface)
 [![Code Climate](https://codeclimate.com/github/Dhii/factory-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/factory-interface)
